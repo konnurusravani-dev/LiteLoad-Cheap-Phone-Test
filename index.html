@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#123b52">
+  <title>LiteLoad — Cheap Phone Test</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">LiteLoad</div>
+    <span class="tag">Cheap Phone Test</span>
+  </header>
+  <main>
+    <section class="hero">
+      <p class="eyebrow">FAST • SIMPLE • MOBILE-FIRST</p>
+      <h1>A lighter web for every phone.</h1>
+      <p class="intro">A small demo website designed to stay readable and usable on budget smartphones and slower connections.</p>
+      <button id="checkBtn" type="button">Run quick device check</button>
+      <p id="status" class="status" aria-live="polite">Ready to check your browser.</p>
+    </section>
+    <section class="panel">
+      <h2>Designed for limited resources</h2>
+      <div class="features">
+        <article><span class="icon">⚡</span><h3>Lightweight</h3><p>No frameworks or large images required.</p></article>
+        <article><span class="icon">📱</span><h3>Responsive</h3><p>Flexible layout for narrow phone screens.</p></article>
+        <article><span class="icon">📶</span><h3>Low-data friendly</h3><p>Simple text and CSS help reduce page weight.</p></article>
+      </div>
+    </section>
+    <section class="panel">
+      <h2>Prototype checks</h2>
+      <ul id="checks">
+        <li>Mobile viewport support</li>
+        <li>Readable text and buttons</li>
+        <li>Basic browser capability check</li>
+      </ul>
+      <p class="note">Demo only: this page reports basic browser details. It does not benchmark the phone's full performance or measure network speed.</p>
+    </section>
+  </main>
+  <footer>LiteLoad prototype • Built for the Cheap Phone Test</footer>
+  <script src="app.js"></script>
+</body>
+</html>

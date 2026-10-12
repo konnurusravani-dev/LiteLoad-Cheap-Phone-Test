@@ -1,0 +1,24 @@
+* { box-sizing: border-box; }
+:root { color-scheme: light; --navy: #123b52; --teal: #1e776f; --paper: #f3f7f8; --ink: #18313d; }
+body { margin: 0; font-family: system-ui, -apple-system, "Segoe UI", sans-serif; background: var(--paper); color: var(--ink); line-height: 1.55; }
+.topbar { display:flex; justify-content:space-between; align-items:center; gap:12px; padding:16px clamp(16px, 5vw, 56px); background:var(--navy); color:white; }
+.brand { font-size:1.25rem; font-weight:800; letter-spacing:.02em; }
+.tag { font-size:.78rem; border:1px solid #ffffff70; padding:5px 10px; border-radius:999px; }
+main { width:min(900px, 100%); margin:auto; padding:24px clamp(16px, 5vw, 32px) 36px; }
+.hero { background:white; border-radius:20px; padding:clamp(22px, 5vw, 42px); box-shadow:0 8px 28px #123b5210; }
+.eyebrow { color:var(--teal); font-weight:800; font-size:.75rem; letter-spacing:.12em; }
+h1 { color:var(--navy); font-size:clamp(2rem, 7vw, 3.4rem); line-height:1.08; margin:.35em 0; max-width:650px; }
+.intro { max-width:620px; font-size:1.05rem; }
+button { background:var(--teal); color:white; border:0; border-radius:12px; padding:13px 18px; font:inherit; font-weight:700; cursor:pointer; }
+button:focus-visible { outline:3px solid #e6ad42; outline-offset:3px; }
+.status { padding:10px 12px; background:#edf6f4; border-radius:10px; font-size:.9rem; }
+.panel { margin-top:18px; background:white; padding:22px; border-radius:18px; }
+h2 { margin-top:0; color:var(--navy); }
+.features { display:grid; grid-template-columns:repeat(3, minmax(0,1fr)); gap:14px; }
+.features article { padding:14px; border:1px solid #dce7e9; border-radius:14px; }
+.features h3 { margin:.3em 0; font-size:1rem; }
+.features p { margin-bottom:0; font-size:.92rem; }
+.icon { font-size:1.45rem; }
+.note { color:#536873; font-size:.84rem; }
+footer { text-align:center; padding:20px; font-size:.82rem; color:#536873; }
+@media (max-width:600px) { .features { grid-template-columns:1fr; } .topbar { align-items:flex-start; flex-direction:column; } .panel { padding:18px; } }
